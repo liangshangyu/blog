@@ -5,6 +5,7 @@ let express =require('express')
 let app = express();
 let router = express.Router();
 router.get('/',function (req,res) {
-    res.end('首页')
+    res.render('index',{title:'首页'});
+    /*res.send('首页')*/
 });
 module.exports = router;
